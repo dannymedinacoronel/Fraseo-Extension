@@ -1,10 +1,29 @@
 # Fraseo
 
+
 <p align="center"><img src="docs/icono.png" alt="Fraseo" width="96" /></p>
 
 > Este repositorio contiene la información y los paquetes de instalación. El código fuente es privado.
 
+**Plantillas y abreviaturas de texto para Chrome.**
+
+[![Descargar](https://img.shields.io/badge/⬇_Descargar-v1.3.0-ffd23f?style=for-the-badge&logo=googlechrome&logoColor=black)](https://github.com/dannymedinacoronel/Fraseo-Extension/releases/latest) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-7b2ff7?style=flat-square) ![Chrome 120+](https://img.shields.io/badge/Chrome-120%2B-4285F4?style=flat-square&logo=googlechrome&logoColor=white) ![Idiomas](https://img.shields.io/badge/idiomas-3-3b82f6?style=flat-square) ![Gratis](https://img.shields.io/badge/precio-gratis-2e9b63?style=flat-square)
+
+**[Capturas](#capturas)** · **[Funciones](#lo-esencial)** · **[Instalar](#instalar-en-chrome)** · **[Privacidad](#privacidad)** · **[Soporte](#soporte)**
+
+---
+
 **Fraseo** guarda los textos que escribes una y otra vez y los pega donde estés: con un clic desde el panel lateral de Chrome, con una abreviatura como `;hola` o con un atajo de teclado.
+
+## Capturas
+
+| El panel (tema claro) | Tema Noche | Tema Rosa |
+|---|---|---|
+| ![Panel de Fraseo en tema claro](docs/capturas/panel-claro.png) | ![Panel de Fraseo en tema Noche](docs/capturas/panel-noche.png) | ![Panel de Fraseo en tema Rosa](docs/capturas/panel-rosa.png) |
+
+| Editor de plantillas | Ajustes |
+|---|---|
+| ![Editor de plantillas con formato, categorías y variables](docs/capturas/editor.png) | ![Ajustes: apariencia, idioma, atajos y copia de seguridad](docs/capturas/ajustes.png) |
 
 ## Lo esencial
 
@@ -50,7 +69,14 @@ Requiere Chrome 120 o posterior. Instalada así no se actualiza sola: descarga e
 
 ## Privacidad
 
-El aviso de privacidad está dentro de la extensión (Ajustes). Fraseo no tiene cuentas, analítica, publicidad ni servidores propios: plantillas, preferencias y el contador de uso se guardan en `chrome.storage.local`. Para detectar abreviaturas, Fraseo compara en tu equipo los últimos caracteres que escribes en un campo editable; no guarda ni envía lo que escribes. Al confirmar una sugerencia desde la barra de Chrome (palabra clave `fraseo`), la consulta se envía al buscador predeterminado. La web en la que insertas un texto lo recibe como si lo hubieras escrito.
+**Resumen:** Fraseo no tiene cuentas, analítica, publicidad ni servidores propios, y no envía tus plantillas a nadie.
+
+- Plantillas, preferencias y contador de uso se guardan en `chrome.storage.local`, solo en tu perfil de Chrome (no se sincronizan).
+- Para detectar abreviaturas, Fraseo compara **en tu equipo** los últimos caracteres que escribes en un campo editable. No guarda ni envía lo que escribes, y ignora los campos de contraseña. Puedes desactivarlo en *Ajustes → Expandir abreviaturas*.
+- Solo sale texto de tu equipo en dos casos: si confirmas una sugerencia desde la barra de direcciones (palabra clave `fraseo`), la consulta va a tu buscador predeterminado; y la web donde insertas una plantilla recibe el texto como si lo hubieras escrito.
+- Quitar la extensión o borrar sus datos elimina las plantillas: exporta una copia de seguridad si quieres conservarlas.
+
+Política completa: **[PRIVACY.md](PRIVACY.md)**.
 
 ## Permisos
 
@@ -64,6 +90,76 @@ El aviso de privacidad está dentro de la extensión (Ajustes). Fraseo no tiene 
 | `search` | Enviar al buscador la consulta de la barra de direcciones (`fraseo`). |
 | `<all_urls>` | Detectar abreviaturas e insertar texto en cualquier web. |
 
+## Soporte
+
+¿Algo no funciona o tienes una duda? Hay tres vías, de la más rápida a la más completa:
+
+1. **Preguntas frecuentes** (justo debajo): resuelven la mayoría de los casos.
+2. **Una incidencia en GitHub**: [abre una aquí](https://github.com/dannymedinacoronel/Fraseo-Extension/issues/new?template=problema.md). Es la mejor opción para fallos, porque queda registrado y otros usuarios pueden verlo.
+3. **Correo**: [empresademkor@gmail.com](mailto:empresademkor@gmail.com) para consultas privadas, privacidad o sugerencias.
+
+**Para poder ayudarte rápido, incluye:** la versión de Fraseo (en `chrome://extensions`), tu versión de Chrome (`chrome://settings/help`), tu sistema operativo, qué esperabas que pasara y qué pasó, y los pasos para repetirlo. No envíes contraseñas ni datos personales.
+
+### Preguntas frecuentes
+
+<details>
+<summary><b>La abreviatura no se expande</b></summary>
+
+Comprueba que **Expandir abreviaturas** esté activado en Ajustes, que escribas la abreviatura exacta (mejor si empieza por `;`) en un campo de texto normal y que la extensión tenga acceso a la web (`chrome://extensions` → Detalles → Acceso al sitio). No funciona en campos de contraseña, en páginas internas de Chrome (`chrome://…`) ni en la Chrome Web Store.
+
+</details>
+
+<details>
+<summary><b>Una abreviatura salta sin querer o no llega a completarse</b></summary>
+
+Una abreviatura no puede empezar igual que otra (por ejemplo `;sal` y `;saludo`), porque la corta se expandiría antes de terminar de escribir la larga. El editor te avisa del conflicto. Empezar con `;` evita que salten al escribir texto normal.
+
+</details>
+
+<details>
+<summary><b>No funciona en Google Docs ni en otros editores de lienzo</b></summary>
+
+Esos editores dibujan el texto en un lienzo y no exponen campos de texto, así que las abreviaturas no se expanden allí. **Copiar** y pegar sí funciona.
+
+</details>
+
+<details>
+<summary><b>No puedo insertar en la barra de direcciones ni en `chrome://…`</b></summary>
+
+Chrome no permite que las extensiones escriban ahí. Usa **Copiar** o **Copiar para la barra de Chrome** y pega con `Ctrl+L`, `Ctrl+V`.
+
+</details>
+
+<details>
+<summary><b>He perdido mis plantillas</b></summary>
+
+Se guardan en el almacenamiento local de la extensión: al desinstalarla o borrar sus datos desaparecen. Exporta de vez en cuando una copia en *Ajustes → Exportar* y recupérala con *Importar* (puedes añadir sin duplicar o reemplazar).
+
+</details>
+
+<details>
+<summary><b>¿Cómo cambio los atajos de teclado?</b></summary>
+
+En `chrome://extensions/shortcuts`. Por defecto: `Ctrl+Shift+1/2/3` insertan las plantillas asignadas y `Alt+Shift+F` abre el panel.
+
+</details>
+
+<details>
+<summary><b>¿Cuesta algo? ¿Funciona en otros navegadores?</b></summary>
+
+Es gratis. Está pensada para Google Chrome 120 o posterior; puede funcionar en navegadores basados en Chromium, pero no está probada en ellos.
+
+</details>
+
+<details>
+<summary><b>Cómo actualizar a una versión nueva</b></summary>
+
+Descarga el ZIP del [último Release](https://github.com/dannymedinacoronel/Fraseo-Extension/releases/latest), sustituye la carpeta anterior y pulsa el botón de recargar de Fraseo en `chrome://extensions`. Tus plantillas se conservan.
+
+</details>
+
 ## Autor
 
 Danny Medina Coronel · empresademkor@gmail.com
+
+© 2026 Danny Medina Coronel. Todos los derechos reservados.
