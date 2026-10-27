@@ -1,6 +1,6 @@
 # Privacidad y permisos de Fraseo
 
-*Actualizado: 27 de octubre de 2026 · Versión 1.3.0 · Responsable: Danny Medina Coronel ([empresademkor@gmail.com](mailto:empresademkor@gmail.com))*
+*Actualizado: 27 de octubre de 2026 · Versión 1.3.1 · Responsable: Danny Medina Coronel ([empresademkor@gmail.com](mailto:empresademkor@gmail.com))*
 
 ## En pocas palabras
 
@@ -41,7 +41,7 @@ Puedes editar o eliminar plantillas desde Fraseo, exportar una copia, desactivar
 
 ## Seguridad y alcance
 
-Fraseo no incluye conexión a un servidor propio ni bibliotecas externas. Este aviso describe el comportamiento de la versión 1.3.0, se ofrece como información de privacidad y no sustituye la política del sitio web o del proveedor de búsqueda al que decidas enviar un texto.
+Fraseo no incluye conexión a un servidor propio ni bibliotecas externas. Este aviso describe el comportamiento de la versión 1.3.1, se ofrece como información de privacidad y no sustituye la política del sitio web o del proveedor de búsqueda al que decidas enviar un texto.
 
 ## Contacto
 

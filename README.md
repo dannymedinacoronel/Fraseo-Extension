@@ -7,7 +7,7 @@
 
 **Plantillas y abreviaturas de texto para Chrome.**
 
-[![Descargar](https://img.shields.io/badge/⬇_Descargar-v1.3.0-ffd23f?style=for-the-badge&logo=googlechrome&logoColor=black)](https://github.com/dannymedinacoronel/Fraseo-Extension/releases/latest) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-7b2ff7?style=flat-square) ![Chrome 120+](https://img.shields.io/badge/Chrome-120%2B-4285F4?style=flat-square&logo=googlechrome&logoColor=white) ![Idiomas](https://img.shields.io/badge/idiomas-3-3b82f6?style=flat-square) ![Gratis](https://img.shields.io/badge/precio-gratis-2e9b63?style=flat-square)
+[![Descargar](https://img.shields.io/badge/⬇_Descargar-v1.3.1-ffd23f?style=for-the-badge&logo=googlechrome&logoColor=black)](https://github.com/dannymedinacoronel/Fraseo-Extension/releases/latest) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-7b2ff7?style=flat-square) ![Chrome 120+](https://img.shields.io/badge/Chrome-120%2B-4285F4?style=flat-square&logo=googlechrome&logoColor=white) ![Idiomas](https://img.shields.io/badge/idiomas-3-3b82f6?style=flat-square) ![Gratis](https://img.shields.io/badge/precio-gratis-2e9b63?style=flat-square)
 
 **[Capturas](#capturas)** · **[Funciones](#lo-esencial)** · **[Instalar](#instalar-en-chrome)** · **[Privacidad](#privacidad)** · **[Soporte](#soporte)**
 
@@ -21,9 +21,9 @@
 |---|---|---|
 | ![Panel de Fraseo en tema claro](docs/capturas/panel-claro.png) | ![Panel de Fraseo en tema Noche](docs/capturas/panel-noche.png) | ![Panel de Fraseo en tema Rosa](docs/capturas/panel-rosa.png) |
 
-| Editor de plantillas | Ajustes |
-|---|---|
-| ![Editor de plantillas con formato, categorías y variables](docs/capturas/editor.png) | ![Ajustes: apariencia, idioma, atajos y copia de seguridad](docs/capturas/ajustes.png) |
+| Editor de plantillas | Ajustes | Guía rápida |
+|---|---|---|
+| ![Editor de plantillas con formato, categorías y variables](docs/capturas/editor.png) | ![Ajustes: apariencia, idioma, atajos y copia de seguridad](docs/capturas/ajustes.png) | ![Guía rápida de 6 pasos](docs/capturas/guia.png) |
 
 ## Lo esencial
 
@@ -37,7 +37,7 @@
 
 ## Instalar en Chrome
 
-1. Ve a **[Releases](../../releases/latest)** y descarga `fraseo-1.3.0.zip`.
+1. Ve a **[Releases](../../releases/latest)** y descarga `fraseo-1.3.1.zip`.
 2. Descomprime el ZIP en una carpeta que no vayas a borrar (Chrome la lee desde ahí).
 3. Abre `chrome://extensions` y activa el **Modo de desarrollador**.
 4. Pulsa **Cargar descomprimida** y selecciona la carpeta descomprimida.
