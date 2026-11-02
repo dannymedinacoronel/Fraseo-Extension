@@ -158,6 +158,11 @@ Descarga el ZIP del [último Release](https://github.com/dannymedinacoronel/Fras
 
 </details>
 
+## Comunidad
+
+- 💬 ¿Dudas, ideas o trucos? Cuéntalo en [Discussions](https://github.com/dannymedinacoronel/Fraseo-Extension/discussions).
+- ⭐ Si la extensión te ayuda, una estrella en este repositorio me ayuda a que más gente la encuentre.
+
 ## Autor
 
 Danny Medina Coronel · empresademkor@gmail.com
